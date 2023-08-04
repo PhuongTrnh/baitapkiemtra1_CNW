@@ -18,24 +18,29 @@
 </head>
 
 <body>
-    <h3>Đây là trang chi tiết</h3>
-    <!-- <div class="container">
-        <h3 class="text-center">Detail Employee</h3>
-        <div class="mt-3">
-            <label>Name:</label>
-            <input type="text" require name="name" id="" class="form-control" value="<?=$employee->getName()?>">
-        </div>
-        <div class="mt-3">
-            <label>Address:</label>
-            <input type="text" require name="address" id="" class="form-control" value="<?=$employee->getAddress()?>">
-        </div>
-        <div class="mt-3">
-            <label>Salary:</label>
-            <input type="float" require name="salary" id="" class="form-control" value="<?=$employee->getSalary()?>">
-        </div>
+    <div class="container">
+        <h3 class="text-center">Edit Employee</h3>
         <a class="btn btn-primary float-end" href="<?= DOMAIN . "/public/index.php" ?>">Back</a>
+        <form action="<?= DOMAIN . "/public/index.php?action=update" ?>" method="post">
+            <input type="hidden" name="id" value="<?=$employee->getId()?>">
+            <div class="mt-3">
+                <label for="">Name</label>
+                <input type="text" name="name" id="" class="form-control" value="<?=$employee->getName()?>">
+            </div>
+            <div class="mt-3">
+                <label for="">Address</label>
+                <input type="text" name="address" id="" class="form-control" value="<?=$employee->getAddress()?>">
+            </div>
+            <div class="mt-3">
+                <label for="">Salary</label>
+                <input type="float" name="salary" id="" class="form-control" value="<?=$employee->getSalary()?>">
+            </div>
+            <div class="mt-3">
+                <button type="submit" name="submit" class="btn btn-success">Save</button>
+            </div>
+        </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

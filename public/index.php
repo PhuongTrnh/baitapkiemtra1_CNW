@@ -9,6 +9,7 @@
             require_once APP."/app/controllers/EmployeeController.php";
             require_once APP."/app/services/EmployeeService.php";
             require_once APP."/app/models/Employee.php";
+            // require_once APP."/app/database/create_data_by_faker.php";
             $employeeController = new EmployeeController();
             switch($action){
                 case "index":
