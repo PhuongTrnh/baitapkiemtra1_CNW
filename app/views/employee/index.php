@@ -43,10 +43,11 @@
         </thead>
         <tbody>
             <?php
+            $i = 1;
             foreach ($employees as $employee) {
             ?>
                 <tr>
-                    <th scope="row"><?= $employee->getId(); ?></th>
+                    <th scope="row"><?= $i++; ?></th>
                     <td><?= $employee->getName(); ?></td>
                     <td><?= $employee->getAddress(); ?></td>
                     <td><?= $employee->getSalary(); ?></td>
